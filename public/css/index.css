@@ -1,0 +1,268 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.header img{
+    width: 20%;
+    margin-left: 100px;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+.header{
+    display: flex;
+    width: 100%;
+    margin:auto;
+    height: 100px;
+    align-items: center;
+    background: #F8F3E2;
+}
+.logo-container,.nav-links,.cart{
+    display: flex;
+}
+.logo-container{
+    flex:1;
+    justify-content: left;
+}
+nav{
+    flex:1;
+}
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-link{
+    font-weight: 100;
+    color: #000000;
+    font-size:20px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.presentation{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    min-height: 80vh;
+    align-items: center
+}
+.introduction{
+    flex:1;
+    
+}
+.intro-text h1{
+    color:#008CC1;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 86px;
+    font-weight: bold;
+    line-height: 0;
+    
+}
+.intro-text p{
+    color:#EBAD00;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    max-width: 70%;
+}
+.cta-select{
+    font-family: 'Poppins', sans-serif;
+    height: 60px;
+    width: 300px;
+    font-size: 30px;
+    background: linear-gradient(to right bottom, #4776E6, #8E54E9);
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 36px;
+    border: none;
+}
+.cta{
+    padding: 50px 00px 0px 0px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.cover{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
+}
+
+main{
+    height: 90vh;
+    background-image: url(../IMAGE/back1.jpg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;  
+}
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes point{
+    0%{
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+/*facilities*/
+.facilities{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top:50px;
+    background: #EDDFC9;
+}
+.facilities h1{
+    font-size: 50px;
+    
+}
+.facilities-cols{
+    display: flex;
+    animation: up 1.5s ease;
+}
+.facilities-col{
+    border-radius: 10px;
+    margin-bottom: 5%;
+
+}
+.grid-item p{
+    font-size: 20px;
+    width: 80%;
+    margin:auto;
+}
+.grid-item img{
+    width: 400px;
+    border-radius: 10px;
+    
+}
+
+.grid-container {
+    display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  }
+
+
+@keyframes up{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(00px);
+    }
+}
+/* pop-up */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+
+/* carousel */
+  .carousel{
+  
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.feedback{
+    background: linear-gradient(#ffffff,#F8F3E2);
+    height: 100%;
+}
